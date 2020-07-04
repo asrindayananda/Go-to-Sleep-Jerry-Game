@@ -24,6 +24,9 @@ namespace Platformer.Gameplay
 
             if (willHurtEnemy)
             {
+
+
+
                 var enemyHealth = enemy.GetComponent<Health>();
                 if (enemyHealth != null)
                 {
@@ -40,10 +43,12 @@ namespace Platformer.Gameplay
                 }
                 else
                 {
+
                     Schedule<EnemyDeath>().enemy = enemy;
-                    player.Bounce(2);
+                    player.Bounce(1);
                 }
             }
+
             else
             {
                 Schedule<PlayerDeath>();

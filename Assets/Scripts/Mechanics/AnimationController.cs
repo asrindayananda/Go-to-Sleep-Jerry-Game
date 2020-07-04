@@ -9,7 +9,7 @@ namespace Platformer.Mechanics
     /// <summary>
     /// AnimationController integrates physics and animation. It is generally used for simple enemy animation.
     /// </summary>
-    [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
+
     public class AnimationController : KinematicObject
     {
         /// <summary>
@@ -62,13 +62,13 @@ namespace Platformer.Mechanics
                 }
             }
 
-            if (move.x > 0.01f)
-                spriteRenderer.flipX = false;
-            else if (move.x < -0.01f)
-                spriteRenderer.flipX = true;
+            //if (move.x > 0.01f)
+              //  spriteRenderer.flipX = false;
+          //  else if (move.x < -0.01f)
+              //  spriteRenderer.flipX = true;
 
-            animator.SetBool("grounded", IsGrounded);
-            animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+            //animator.SetBool("grounded", IsGrounded);
+          //  animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
             targetVelocity = move * maxSpeed;
         }

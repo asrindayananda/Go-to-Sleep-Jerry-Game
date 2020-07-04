@@ -20,6 +20,9 @@ namespace Platformer.Mechanics
                 var ev = Schedule<PlayerEnteredDeathZone>();
                 ev.deathzone = this;
             }
+
+            //set the death time to zero
+            //if time is zero then death?
         }
     }
 }

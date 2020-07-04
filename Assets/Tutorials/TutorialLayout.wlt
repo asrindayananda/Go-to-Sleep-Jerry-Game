@@ -427,7 +427,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/FPS
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ASRIND~1\AppData\Local\Temp\f05d34133b6ee9f4a878b8040bc2af50
+  m_LastProjectPath: /Users/purusharthmalhotra/Documents/game design/New Unity Project (1)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:

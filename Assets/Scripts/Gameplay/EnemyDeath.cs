@@ -1,6 +1,7 @@
 using Platformer.Core;
 using Platformer.Mechanics;
 
+using UnityEngine;
 namespace Platformer.Gameplay
 {
     /// <summary>
@@ -13,6 +14,7 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
+          enemy.gameObject.SetActive(false);
             enemy._collider.enabled = false;
             enemy.control.enabled = false;
             if (enemy._audio && enemy.ouch)
